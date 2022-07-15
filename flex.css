@@ -4,11 +4,20 @@
   box-sizing: border-box;  
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
 body {
     background: hsl(0, 0%, 95%);
     padding: 2rem;
     font-size: 15px;
-    font-family: 'Lexend Deca';
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
 }
 
 ul {
@@ -17,18 +26,27 @@ ul {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
-ul button{
+
+.h-link{
     padding: 1.2rem 2.2rem;
+    margin: 1rem 2.5rem;
     border-radius: 2rem;
     border: none;
     font-weight: 700;
     font-size: 14px;
     background: hsl(180, 79%, 13%);
+    color: hsl(0, 0%, 95%);
     cursor: pointer;
 }
+
+.h-link:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(180, 79%, 13%);
+    outline: 3px solid hsl(180, 79%, 13%);
+}
+
 
 .main-container {
     display: flex;
@@ -75,7 +93,6 @@ ul button{
     color: hsl(0, 0%, 95%);
     font-size: 2rem;
     font-weight: 700;
-    font-family: 'Big Shoulders Display';
 }
 
 
@@ -113,7 +130,6 @@ ul button{
 .dark-cyan h1 {
     color: hsl(0, 0%, 95%);
     font-size: 2rem;
-    font-weight: 700;
 }
 
 
@@ -153,13 +169,16 @@ ul button{
 .very-dark-cyan h1 {
     color: hsl(0, 0%, 95%);
     font-size: 2rem;
-    font-weight: 700;
 }
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
     body {
         padding: 1rem;
+    }
+
+    ul button {
+        margin: 1rem 11rem;
     }
     .main-container {
         margin-top: 2rem;
@@ -180,4 +199,51 @@ ul button{
         border-bottom-left-radius: 0;
         
     }
+}
+
+
+.grid-container {
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-auto-columns: auto;
+    grid-template-rows: repeat(3, 15rem);
+    margin: 2rem auto;
+    max-width: 50rem;
+    gap: 1rem;
+}
+
+.box1 {
+    background: #eb5020;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* height: 15rem; */
+}
+
+.box2 {
+    background: #ffa401;
+    /* height: 15rem; */
+}
+.box3 {
+    background: #05aa42;
+    /* height: 15rem; */
+}
+
+.box4 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    display: inline-grid;
+    gap: 5%;
+    grid-template-rows: 40% 55%;
+}
+
+.boxA {
+    background: #01aefd;
+    /* height: 7rem; */
+    
+
+}
+.boxB {
+    background: #01aefd;
+    /* height: 7rem; */
+
 }

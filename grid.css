@@ -17,60 +17,55 @@ ul {
   
 a {
       text-decoration: none;
-      color: white;
 }
   
-ul button{
-      padding: 1.2rem 2.2rem;
-      border-radius: 2rem;
-      border: none;
-      font-weight: 700;
-      font-size: 14px;
-      background: hsl(184, 100%, 22%);
-      cursor: pointer;
+.h-link {
+    padding: 1.2rem 2.2rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    background: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    cursor: pointer;
 }
 
+.h-link:hover {
+    background-color: hsl(0, 0%, 95%);
+    color: hsl(180, 79%, 13%);
+    outline: 3px solid hsl(180, 79%, 13%);
+}
+
+
 .grid-container {
-    display: grid;
-    /* grid-template-columns: auto auto auto; */
-    grid-auto-columns: auto;
     margin: 2rem auto;
-    width: 50rem;
-    gap: 1rem;
+    max-width: 50rem;
+    display: grid;
+    grid-template-rows: 15rem 15rem;
+    grid-template-areas: 
+    'A A B'
+    'C D D';
 }
 
 .box1 {
     background: #eb5020;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    height: 15rem;
+    grid-area: A;
 }
 
 .box2 {
     background: #ffa401;
-    height: 15rem;
+    grid-area: B;
+
 }
+
 .box3 {
     background: #05aa42;
-    height: 15rem;
+    grid-area: C;
+
 }
 
-.box4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    display: inline-grid;
-    gap: 5%;
-    grid-template-rows: 40% 55%;
-}
-
-.boxA {
+.box2 {
     background: #01aefd;
-    /* height: 7rem; */
-    
-
-}
-.boxB {
-    background: #01aefd;
-    /* height: 7rem; */
+    grid-area: D;
 
 }
