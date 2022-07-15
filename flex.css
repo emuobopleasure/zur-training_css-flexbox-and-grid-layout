@@ -211,39 +211,3 @@ a {
     max-width: 50rem;
     gap: 1rem;
 }
-
-.box1 {
-    background: #eb5020;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    /* height: 15rem; */
-}
-
-.box2 {
-    background: #ffa401;
-    /* height: 15rem; */
-}
-.box3 {
-    background: #05aa42;
-    /* height: 15rem; */
-}
-
-.box4 {
-    grid-column-start: 2;
-    grid-column-end: 4;
-    display: inline-grid;
-    gap: 5%;
-    grid-template-rows: 40% 55%;
-}
-
-.boxA {
-    background: #01aefd;
-    /* height: 7rem; */
-    
-
-}
-.boxB {
-    background: #01aefd;
-    /* height: 7rem; */
-
-}

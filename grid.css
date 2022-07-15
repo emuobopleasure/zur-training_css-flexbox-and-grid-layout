@@ -41,10 +41,15 @@ a {
     margin: 2rem auto;
     max-width: 50rem;
     display: grid;
-    grid-template-rows: 15rem 15rem;
+    grid-template-columns: (3, 1fr);
+    gap: 1rem;
+    grid-template-rows: 10rem;
+    height: 90vh;
     grid-template-areas: 
+    'A A B '
     'A A B'
-    'C D D';
+    'C D D'
+    'C E E';
 }
 
 .box1 {
@@ -64,8 +69,13 @@ a {
 
 }
 
-.box2 {
+.box4 {
     background: #01aefd;
     grid-area: D;
 
+}
+
+.box5 {
+    background: #01aefd;
+    grid-area: E;
 }
